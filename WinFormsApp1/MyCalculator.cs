@@ -22,7 +22,7 @@ namespace WinFormsApp1
 
         // 清空 List
         list.Clear();
-
+        1234
         object[] array = list.ToArray();
         */
         public List<object> list = new List<object>();
