@@ -47,7 +47,7 @@ namespace WinFormsApp1
                 }
                 return result;
             });
-            this.MathFuncDict.Add(" √￣ ", (a, b) => {
+            this.MathFuncDict.Add(" square_root ", (a, b) => {
                 if (a <= 0)
                 {
                     return a;
@@ -120,9 +120,9 @@ namespace WinFormsApp1
                         return;
                         }
                     // 用户尝试 拿<=0的数字开根 直接return
-                    if (this.TempStorageOperate.Item2 == " √￣ " && this.TempStorageNum <= 0)
+                    if (this.TempStorageOperate.Item2 == " square_root " && this.TempStorageNum <= 0)
                     {
-                        this.OutputBox["History_forms"] += this.OutputBox["Result_forms"] + $"  √￣  {num} is invalid.\r\n";
+                        this.OutputBox["History_forms"] += this.OutputBox["Result_forms"] + $"  square_root  {num} is invalid.\r\n";
                         return;
                     }
                     this.OutputBox["History_forms"] += this.TempStorageNum.ToString() + this.TempStorageOperate.Item2 +  num.ToString();

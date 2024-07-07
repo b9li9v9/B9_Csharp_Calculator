@@ -159,7 +159,7 @@ namespace WinFormsApp1
 
         private void btn_square_root_Click(object sender, EventArgs e)
         {
-            myCalculator.handle(myCalculator.OutputBox["TempWaitNum_forms"], " ¡Ì£þ ");
+            myCalculator.handle(myCalculator.OutputBox["TempWaitNum_forms"], " square_root ");
             myCalculator.OutputBox["TempWaitNum_forms"] = "";
             Refresh();
         }
